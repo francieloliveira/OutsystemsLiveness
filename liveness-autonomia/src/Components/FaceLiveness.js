@@ -10,7 +10,7 @@ function FaceLiveness({faceLivenessAnalysis}) {
     const [sessionId, setSessionId] = React.useState(null)
    
 
-    const endpoint = process.env.REACT_APP_ENV_API_URL ? process.env.REACT_APP_ENV_API_URL : ''
+    const endpoint = "https://ko0wc9av9h.execute-api.eu-north-1.amazonaws.com/dev"
 
     useEffect(() => {
         /*
@@ -56,7 +56,7 @@ function FaceLiveness({faceLivenessAnalysis}) {
             ) : (
                 <FaceLivenessDetector
                     sessionId={sessionId}
-                    region="us-east-1"
+                    region="eu-north-1"
                     onAnalysisComplete={handleAnalysisComplete}
                     onError={(error) => {
                         console.error(error);
