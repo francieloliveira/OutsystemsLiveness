@@ -19,7 +19,7 @@
       "function": {
         "livenesslambdafunction": {
           "deploymentBucketName": "amplify-livenessautonomia-dev-9b106-deployment",
-          "s3Key": "amplify-builds/livenesslambdafunction-77686e37446a6e37316f-build.zip"
+          "s3Key": "amplify-builds/livenesslambdafunction-544849756a7078556565-build.zip"
         }
       },
       "api": {
