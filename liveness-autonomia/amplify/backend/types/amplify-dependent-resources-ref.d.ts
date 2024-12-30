@@ -1,5 +1,10 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
+    "api137c8be5": {
+      "ApiId": "string",
+      "ApiName": "string",
+      "RootUrl": "string"
+    },
     "apiamplify": {
       "ApiId": "string",
       "ApiName": "string",
@@ -24,6 +29,13 @@ export type AmplifyDependentResourcesAttributes = {
       "LambdaExecutionRoleArn": "string",
       "Name": "string",
       "Region": "string"
+    }
+  },
+  "predictions": {
+    "identifyEntitiesfc8c3bd5": {
+      "celebrityDetectionEnabled": "string",
+      "maxEntities": "string",
+      "region": "string"
     }
   }
 }

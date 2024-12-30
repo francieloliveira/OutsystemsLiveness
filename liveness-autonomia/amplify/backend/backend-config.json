@@ -1,5 +1,19 @@
 {
   "api": {
+    "api137c8be5": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "livenesslambdafunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "apiamplify": {
       "dependsOn": [
         {
@@ -64,6 +78,14 @@
           "resourceName": "livenesslambdafunction"
         }
       ]
+    }
+  },
+  "predictions": {
+    "identifyEntitiesfc8c3bd5": {
+      "dependsOn": [],
+      "identifyType": "identifyEntities",
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition"
     }
   }
 }

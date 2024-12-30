@@ -23,7 +23,11 @@
         }
       },
       "api": {
-        "apiamplify": {}
+        "apiamplify": {},
+        "api137c8be5": {}
+      },
+      "predictions": {
+        "identifyEntitiesfc8c3bd5": {}
       }
     }
   }
