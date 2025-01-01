@@ -17,12 +17,13 @@ export function LivenessQuickStartReact() {
     const fetchCreateLiveness = async () => {
       /*
        * Chamada simulada ao backend para obter sessionId.
-       * Você pode substituir isso pela chamada real à API de criação de sessão.
        */
-      const response = await fetch(
-        'https://8fdvh2yif4.execute-api.eu-north-1.amazonaws.com/dev/items/createLivenessSession'
-      );
-      const data = await response.json();
+
+
+      await new Promise((r) => setTimeout(r, 2000));
+      const mockResponse = { sessionId: 'https://8fdvh2yif4.execute-api.eu-north-1.amazonaws.com/dev/items/createLivenessSession' };
+      const data = mockResponse;
+
       setCreateLivenessApiData(data);
       setLoading(false);
     };
@@ -32,7 +33,7 @@ export function LivenessQuickStartReact() {
 
   const handleAnalysisComplete = async () => {
     /*
-     * Substitua pela lógica real para obter o resultado da sessão.
+     * Obter o resultado da sessão.
      */
     try {
       const response = await fetch(
