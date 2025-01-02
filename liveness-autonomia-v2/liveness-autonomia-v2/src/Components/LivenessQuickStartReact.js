@@ -3,7 +3,7 @@ import { Amplify } from 'aws-amplify';
 import '@aws-amplify/ui-react/styles.css';
 import awsconfig from '../aws-exports'; // Arquivo de configuração do Amplify
 import { FaceLivenessDetector } from '@aws-amplify/ui-react-liveness';
-import { Loader, ThemeProvider } from '@aws-amplify/ui-react';
+import { Loader, ThemeProvider, defaultTheme } from '@aws-amplify/ui-react';
 
 // Configuração do Amplify com base no awsconfig
 Amplify.configure(awsconfig);
@@ -18,7 +18,6 @@ export function LivenessQuickStartReact() {
       /*
        * Chamada simulada ao backend para obter sessionId.
        */
-
 
       await new Promise((r) => setTimeout(r, 2000));
       const mockResponse = { sessionId: 'https://8fdvh2yif4.execute-api.eu-north-1.amazonaws.com/dev/items/createLivenessSession' };
@@ -55,7 +54,7 @@ export function LivenessQuickStartReact() {
   };
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={defaultTheme}>
       {loading ? (
         <Loader />
       ) : (
