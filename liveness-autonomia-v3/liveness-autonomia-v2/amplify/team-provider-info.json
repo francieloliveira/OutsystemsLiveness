@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-livenessautonomiav2-dev-4a6c0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::038462751233:role/amplify-livenessautonomiav2-dev-4a6c0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::038462751233:role/amplify-livenessautonomiav2-dev-4a6c0-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-livenessautonomiav2-dev-4a6c0-deployment",
+      "UnauthRoleName": "amplify-livenessautonomiav2-dev-4a6c0-unauthRole",
+      "StackName": "amplify-livenessautonomiav2-dev-4a6c0",
+      "StackId": "arn:aws:cloudformation:eu-north-1:038462751233:stack/amplify-livenessautonomiav2-dev-4a6c0/823e5030-c6ca-11ef-9e0a-063d0033552b",
+      "AmplifyAppId": "d2j109ghy6q2on"
+    },
+    "categories": {
+      "function": {
+        "livenessautonomiav28bb06b22": {
+          "deploymentBucketName": "amplify-livenessautonomiav2-dev-4a6c0-deployment",
+          "s3Key": "amplify-builds/livenessautonomiav28bb06b22-3067436a67496e444271-build.zip"
+        }
+      },
+      "auth": {
+        "livenessautonomiav21179684f": {}
+      },
+      "api": {
+        "apilivenessv2": {}
+      }
+    }
+  }
+}
